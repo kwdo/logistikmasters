@@ -64,7 +64,7 @@
                             ->viewVars(array(   'firstname' => $this->request->data['UserProfile']['firstname'],
                                 'surname' => $this->request->data['UserProfile']['surname'],
                                 'text' => $text,
-                                'activationLink' => 'http://' . $_SERVER['HTTP_HOST'] . '/users/doubleoptin/' . $this->request->data['User']['doubleoptin_hash']))
+                                'activationLink' => 'https://' . $_SERVER['HTTP_HOST'] . '/users/doubleoptin/' . $this->request->data['User']['doubleoptin_hash']))
                             ->send();
                     $this->User->Profile->getUserProfile($this->User->id);
                     $this->redirect(array('action' => 'registered'));
@@ -100,7 +100,7 @@
                         ->subject('DoubleOptIn von Logistik Masters')
                         ->send('Hallo ' . $this->request->data['UserProfile']['firstname'] . ' ' . $this->request->data['UserProfile']['surname'] . ',' . PHP_EOL . PHP_EOL .
                             'um am Wettbewerb teilzunehmen, musst Du Deinen Account über folgenden Link aktivieren: ' . PHP_EOL .
-                            'http://' . $_SERVER['HTTP_HOST'] . '/users/doubleoptin/' . $this->request->data['User']['doubleoptin_hash'] . PHP_EOL . PHP_EOL . 'Dein Logistik Masters Team');
+                            'https://' . $_SERVER['HTTP_HOST'] . '/users/doubleoptin/' . $this->request->data['User']['doubleoptin_hash'] . PHP_EOL . PHP_EOL . 'Dein Logistik Masters Team');
 
                     $this->Session->setFlash(__('The user has been saved'));
                     $this->redirect(array('action' => 'registered'));
@@ -171,7 +171,7 @@
                             ->viewVars(array(   'firstname' => $user['UserProfile']['firstname'],
                                 'surname' => $user['UserProfile']['surname'],
                                 'text' => $text,
-                                'activationLink' => 'http://' . $_SERVER['HTTP_HOST'] . '/users/doubleoptin/' . $user['User']['doubleoptin_hash']))
+                                'activationLink' => 'https://' . $_SERVER['HTTP_HOST'] . '/users/doubleoptin/' . $user['User']['doubleoptin_hash']))
                             ->send();
                         $this->Session->setFlash('Der Aktivierungslink wurde erfolgreich versendet.');
                         $this->redirect(array(
@@ -613,7 +613,7 @@
                         ->subject('Passwort vergessen auf Logistik Masters')
                         ->send('Hallo ' . $user['User']['username'] . ',' . PHP_EOL . PHP_EOL .
                             'um ein neues Passwort zu erhalten klicke  bitte auf den folgenden Link: ' . PHP_EOL .
-                            $_SERVER['HTTP_HOST'] . '/users/newpw/' . $key . PHP_EOL . PHP_EOL . 'Dein Logistik Masters Team');
+                            'https://' . $_SERVER['HTTP_HOST'] . '/users/newpw/' . $key . PHP_EOL . PHP_EOL . 'Dein Logistik Masters Team');
 
                     $user['User']['pw_lost'] = $key;
                     $fieldList             = array('User' => array('pw_lost'));
@@ -854,7 +854,7 @@
                     $this->Session->delete('Forum');
                     $this->_setCookie($this->Auth->user('id'));
 
-                    if ($this->referer() && $this->referer() != 'https://'. $_SERVER['HTTP_HOST'] . 'logistikmasters/users/login')
+                    if ($this->referer() && $this->referer() != 'https://'. $_SERVER['HTTP_HOST'] . '/users/login')
                     {
                         $this->redirect($this->referer());
                     }
@@ -874,7 +874,7 @@
                 $this->Session->delete('Forum');
                 $this->_setCookie($this->Auth->user('id'));
 
-                if ($this->referer() && $this->referer() != 'https://' . $_SERVER['HTTP_HOST'] . 'logistikmasters/users/login')
+                if ($this->referer() && $this->referer() != 'https://' . $_SERVER['HTTP_HOST'] . '/users/login')
                 {
                     $this->redirect($this->referer());
                 }
