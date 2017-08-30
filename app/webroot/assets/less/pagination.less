@@ -1,0 +1,98 @@
+//
+// Pagination (multiple pages)
+// --------------------------------------------------
+
+
+.pagination {
+  text-align: center;
+  font-size: 14px;
+  height: 35px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin: 30px -10px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    max-width: 620px;
+    margin: 50px auto 50px auto !important;
+  }
+
+  > li {
+    display: inline-block;
+
+    &.pagination-prev,
+    &.pagination-next {
+      position: absolute;
+      top: 0;
+
+      > a,
+      > span {
+        border-color: #000;
+        background: #000;
+        display: block;
+        height: 35px;
+        width: 35px;
+      }
+    }
+
+    &.pagination-prev {
+      left: 0;
+
+      a,
+      span {
+        background: #000 url("@{icon-path}icon-arrow-mediathek-left.svg") no-repeat center;
+        background-size: 18px 18px;
+      }
+    }
+
+    &.pagination-next {
+      right: 0;
+
+      a,
+      span {
+        background: #000 url("@{icon-path}icon-arrow-mediathek-right.svg") no-repeat center;
+        background-size: 18px 18px;
+      }
+    }
+
+    > a,
+    > span {
+      min-width: 35px;
+      padding: 0 5px;
+      line-height: 33px;
+      margin-left: 13px;
+      margin-right: 13px;
+    }
+
+    &:last-child {
+      > a,  
+      > span {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .pagination {
+    > li {
+      &:nth-child(n + 6) {
+        display: none;
+        &.pagination-next {
+          display: block;
+        }
+      }
+      > a, 
+      > span {
+        margin-right: 4px;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  
+
+}

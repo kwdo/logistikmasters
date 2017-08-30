@@ -1,0 +1,158 @@
+// Filters
+
+.vr-filters {
+  margin-left: -10px;
+  margin-right: -10px;
+  &:extend(.clearfix all);
+
+  @media (min-width: @grid-float-breakpoint) {
+    background: #f6f6f6;
+    margin: 0 0 30px 0;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+
+  &__search-field {
+    border: 0;
+    background: #f6f6f6 url("@{icon-path}icon-search-grey.png") no-repeat 10px center;
+    background-size: 18px 18px;
+    width: 100%;
+    padding-left: 40px;
+    height: 41px;
+    font-size: 16px;
+    .placeholder(#000);
+
+    @media (min-width: @grid-float-breakpoint) {
+      width: 200px;
+      height: 45px;
+    }
+    @media (min-width: @screen-md) {
+      width: 330px;
+      height: 45px;
+    }
+  }
+
+  &__search {
+    @media (min-width: @grid-float-breakpoint) {
+      float: left;
+      overflow: hidden;
+    }
+  }
+
+  &__options {
+    position: relative;
+
+    @media (min-width: @grid-float-breakpoint) {
+      float: right;
+       &:extend(.clearfix all);
+       padding-right: 15px;
+
+      .form-group {
+        float: left;
+        margin-left: 15px;
+      }
+    }
+
+    @media (min-width: @screen-md) {
+      .form-group {
+        float: left;
+        margin-left: 45px;
+      }
+    }
+  }
+
+  .form-group {
+    @media (min-width: @grid-float-breakpoint) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    line-height: 41px;
+    font-size: 16px;
+    left: 40px;
+    z-index: 60;
+
+    @media (min-width: @grid-float-breakpoint) {
+      float: left;
+      line-height: 37px;
+      position: relative;
+      left: auto;
+      border-left: 1px solid #000;
+      margin: 4px 0 0 0;
+      padding-left: 20px;
+    }
+  }
+}
+
+.form-select {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background: #f6f6f6;
+
+  &:before {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 8px 0 8px;
+    border-color: #000000 transparent transparent transparent;
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -4px;
+    right: 4px;
+    z-index: 30;
+
+    @media (min-width: @grid-float-breakpoint) {
+      border-width: 5px 5px 0 5px;
+      margin-top: -2px;
+    }
+  }
+
+  select {
+    -webkit-appearance: none;
+    appearance: none; // ?
+    background: transparent;
+    font-weight: bold;
+    color: #000;
+    font-size: 14px;
+    border: 0;
+    border-radius: 0;
+    padding: 5px 45px 5px 10px;
+    direction: rtl;
+    height: 41px;
+    width: 100%;
+    z-index: 50;
+    position: relative;
+    cursor: pointer;
+
+    @media (min-width: @grid-float-breakpoint) {
+      height: 45px;
+      padding-right: 25px;
+    }
+  }
+
+  option {
+    direction: ltr;
+  }
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  .vr-filters {
+    // margin-right: -15px;
+    // margin-left: -15px;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+}

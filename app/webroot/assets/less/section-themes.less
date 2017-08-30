@@ -1,0 +1,75 @@
+// Home Section: Top Themes
+
+.vr-themes-grid {
+  .make-row(20px);
+
+  @media (min-width: @grid-float-breakpoint) {
+    .make-row(50px);
+  }
+
+  &__col {
+    .make-xs-column(6, 20px);
+    .make-sm-column(4, 20px);
+
+    @media (min-width: 992px) {
+      width: 20%;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.vr-themes-item {
+  position: relative;
+  margin-bottom: 25px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 14px;
+    padding: 2px 5px 2px 15px;
+    background: @brand-primary;
+
+    @media (min-width: @grid-float-breakpoint) {
+      font-size: 16px;
+    }
+  }
+
+  &__heading {
+    margin: 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__image {
+    display: block;
+    font: 0/0 a;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+    @media (min-width: @grid-float-breakpoint) {
+      margin-bottom: 15px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .vr-themes-item {
+    margin-bottom: 40px;
+  }
+
+}
+

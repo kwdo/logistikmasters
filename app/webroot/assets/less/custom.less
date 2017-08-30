@@ -1,0 +1,424 @@
+// Custom
+
+body {
+  padding-top: @navbar-height;
+
+  @media (min-width: @grid-float-breakpoint) {
+    padding-top: @navbar-height-lg; //78px;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+}
+
+.fixed {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  body:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    background: rgba(255,255,255,0.72);
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
+
+
+// Layout (wrap+container needed to work better with the custom grid differences)
+
+.wrap {
+  @media (min-width: @grid-float-breakpoint) {
+    padding-left: floor((@grid-gutter-width / 2));
+    padding-right: floor((@grid-gutter-width / 2));
+    max-width: 1200px; //1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: @container-large-desktop; //1170px; //@screen-lg;
+}
+
+.container-alt,
+.container--alt {
+  @media (min-width: @grid-float-breakpoint) {
+    padding-left: 0;
+    padding-right: 0;
+    // overflow: hidden;
+  }
+}
+
+
+//
+
+.vr-content {
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 80px;
+}
+
+
+
+// Images
+
+.img-responsive {
+  display: inline-block;
+}
+
+.img-responsive-full {
+  width: 100%;
+  height: auto;
+}
+
+.img-logo {
+  @media (min-width: @grid-float-breakpoint) {
+    width: 196px;
+    height: auto; //40px;
+  }
+}
+
+
+//
+
+a {
+  text-decoration: underline;
+}
+
+
+//
+
+.metadata {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 300;
+  margin: 0 0 5px 0;
+
+  &:extend(.clearfix all);
+
+  @media (min-width: @grid-float-breakpoint) {
+    font-size: 12px;
+  }
+
+  &__col {
+    white-space: nowrap;
+    max-width: 50%;
+
+    &:first-child {
+      float: left;
+    }
+    &:last-child {
+      float: right;
+      text-align: right;
+    }
+  }
+}
+
+
+
+//
+
+.vr-icon--star {
+  background: url("@{icon-path}icon-star.svg") no-repeat center;
+}
+
+.vr-icon--star-full {
+  background: url("@{icon-path}icon-star-full.svg") no-repeat center;
+}
+
+.vr-icon-star--on-black {
+  background: url("@{icon-path}icon-star-on-black.svg") no-repeat center;
+}
+
+.vr-icon--star,
+.vr-icon--star-full {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+}
+
+
+.vr-item {
+  .vr-icon--star,
+  .vr-icon--star-full {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-size: 10px 10px;
+  }
+  .vr-icon--star {
+    opacity: 0.3;
+  }
+}
+
+
+
+
+// 
+
+.vr-mediathek {
+  background: #000;
+  color: #fff;
+  margin-top: -@navbar-height;
+  padding-top: (@navbar-height + 55px);
+  margin-bottom: 0;
+
+  @media (min-width: @grid-float-breakpoint) {
+    margin-top: -@navbar-height-lg;
+    padding-top: (@navbar-height-lg + 55px);
+  }
+
+  .vr-item p {
+    color: inherit;
+  }
+
+}
+
+.vr-email-alert-link {
+  display: block;
+  padding: 5px 10px;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  font-size: 12px;
+  &--email-text {
+
+  }
+}
+
+
+.vr-modal {
+  z-index: 10001;
+  &-dialog {
+    margin-top: 100px;
+  }
+  &-content {
+    border-radius: 0;
+    border: none;
+  }
+  &-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;  
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+  &-body {
+    padding: 20px 30px;
+    p {
+      margin-bottom: 25px;
+    }
+  }
+  &-title-small {
+    font-family: "Roboto", sans-serif;
+    text-transform: none;
+  }
+}
+
+.modal-backdrop {
+  background-color: #fff;
+  z-index: 10000;
+  &.in {
+    opacity: 0.75;
+  }
+}
+
+
+/*checkbox*/
+
+
+
+.vr-checkbox {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  input[type=checkbox] {
+    display: none;
+    &:checked + label:after  {
+      border-color: #e22713;
+    }
+    &:checked + label:before  {
+      background: #e22713;
+    }
+  }
+  label {
+    font-size: 16px;
+    color: #000;
+  }
+  label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: #a6a6a6 1px solid;
+  }
+  label:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 6px;
+    width: 8px;
+    height: 8px;
+    background: #f6f6f6;
+  }
+  &-circle {
+    label:after {
+      border-radius: 50%;
+    }
+    label:before {
+      top: 8px;
+      left: 4px;
+      width: 14px;
+      height: 14px;
+      background: url(../img/icons/check.png) no-repeat;
+    }
+    input[type=checkbox] {
+      &:checked + label:after  {
+        border-color: #e22713;
+      }
+      &:checked + label:before  {
+        background: url(../img/icons/check-active.png) no-repeat;
+      }
+    }
+  }
+  &-group {
+    &-inline {
+
+    }
+  }
+  
+}
+
+
+
+.vr-checkbox-group-inline {
+  .vr-checkbox {
+    display: inline-block;
+    vertical-align: top;
+    & + .vr-checkbox {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+
+/*radio btn*/
+
+.vr-radio-set {
+
+}
+
+.vr-radio-group {
+  margin-bottom: 5px;
+}
+
+.vr-radio-group-inline {
+  display: inline-block;
+  vertical-align: top;
+  & + .vr-radio-group-inline {
+    margin-left: 40px;
+  }
+}
+
+.vr-radio {
+  /*hide native radio*/
+  display: none;
+  + label {
+    /*text*/
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 30px;
+    // cursor: pointer;
+    font-size: 16px;
+    color: #000;
+    &:before,
+    &:after {
+      /*circle before text*/
+      content: '';
+      display: block;
+      border-radius: 50%;
+      position: absolute;
+    }
+    &:after {
+      top: 2px;
+      left: 0px;
+      height: 20px;
+      width: 20px;
+      border: #a8a8a8 1px solid;
+    }
+    &:before {
+      top: 8px;
+      left: 6px;
+      width: 8px;
+      height: 8px;
+      background: #a8a8a8;
+    }
+    
+  }
+  &:checked + label {
+    &:after {
+      border-color: #e22713;
+    }
+    &:before {
+      background: #e22713;
+    }
+
+  }
+}
+
+
+
+
+
+
+@media(max-width: 991px) {
+
+  .metadata__col,
+  .metadata__col:first-child,
+  .metadata__col:last-child {
+    float: none;
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    text-align: left;
+  }
+
+
+}
+
+
+@media(max-width: 767px) {
+  .wrap,
+  .container {
+    max-width: 540px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .vr-mediathek {
+    padding-top: 70px;
+  }
+
+  .vr-icon--star, .vr-icon--star-full {
+    width: 11px;
+    height: 11px;
+    background-size: 11px 11px;
+  }
+
+
+}
+

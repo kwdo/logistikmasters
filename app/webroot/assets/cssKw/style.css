@@ -1,0 +1,321 @@
+.bigSelect {
+    height: 60px;
+}
+
+.vr-article__caption > p {
+    margin: 0;
+}
+
+.sliderCaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    width: 100%;
+    overflow: hidden;
+    height: 130px;
+    padding: 20px;
+    margin: 0;
+}
+
+.sliderCaption span.headline {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+.sliderCaption span.button {
+    float: right;
+    margin-top: 40px;
+}
+
+.sliderCaption-xs span.headline {
+    color: #000;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+label.small {
+    font-size: 12px;
+}
+
+.springer-nature-footer {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 30px 0 !important;
+    padding: 30px 30px 0 0 !important;
+    font-size: 11px !important;
+    color: #4e4e4e !important;
+}
+
+.springer-nature-footer-reverse {
+    background: none;
+    color: #fff !important;
+}
+
+.springer-nature-footer p {
+    padding: 9px 0 0 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    display: inline-block;
+}
+
+.springer-nature-footer a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.h-section__heading {
+    line-height: 1em;
+    margin-top: -34px;
+}
+
+.h-section--home > .h-section__heading {
+    line-height: 0.75em;
+    margin-top: -65px;
+}
+
+@media screen and (max-width: 767px) {
+    .h-section--home > .h-section__heading {
+        margin-top: -30px;
+    }
+}
+
+.springer-nature-footer a.springer-nature-footer-logo {
+    background: url(//cms.springertransportmedia.de/fm/759/logo-springernature-grey.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    width: 128px;
+    height: 12px;
+}
+
+.springer-nature-footer-reverse a.springer-nature-footer-logo {
+    background: url(//cms.springertransportmedia.de/fm/759/logo-springernature-white.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    width: 128px;
+    height: 12px;
+}
+
+.springer-nature-footer p a {
+    text-decoration: underline !important;
+    background-color: inherit !important;
+    display: inline !important;
+}
+
+.springer-nature-footer a:hover, .springer-nature-footer a:focus, .springer-nature-footer a:active {
+    color: inherit !important;
+}
+
+@media screen and (max-width: 767px) {
+    .springer-nature-footer {
+        margin: 50px 0 0 0;
+        padding: 15px !important;
+        font-size: 10px;
+    }
+
+    .springer-nature-footer p {
+        padding: 10px 0 0 0 !important;
+    }
+}
+
+#smartbanner.android .sb-button {
+    padding: 2px 10px !important;
+    border: none !important;
+    color: #fff !important;
+}
+
+#smartbanner {
+    position: relative !important;
+    top: 0 !important;
+}
+
+#smartbanner .sb-info strong {
+    font-size: 12px;
+}
+
+.vr-detail-text-block p > a {
+    text-decoration: underline;
+}
+
+.label.vr-themes-item__label {
+    border-radius: 0 0 0.25em 0;
+}
+
+.requiredStar label.required:after {
+    content: "*";
+}
+
+.requiredStar .radio label.required:after {
+    content: "";
+}
+
+.vr-item__heading--ad span {
+    background: #e22713 none repeat scroll 0 0;
+    box-decoration-break: clone;
+    padding: 0 10px;
+    color: #fff;
+}
+
+.image-teaser-wrapper {
+    position: relative;
+}
+
+.vr-news-item__heading--ad span {
+    background: #e22713 none repeat scroll 0 0;
+    box-decoration-break: clone;
+    display: inline;
+    padding: 0 10px 0 15px;
+}
+
+.vr-news-item a {
+    text-decoration: none;
+}
+
+.vr-item__image span.label {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+.post-hashtags a {
+    text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+    .navbar-nav-main {
+        display: none;
+    }
+}
+
+.vr-hero {
+    position: relative;
+    opacity: 0.9;
+    background-color: transparent;
+}
+
+.vr-hero::after {
+    content: "";
+    background: #000;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.vr-item__heading--ad span,
+.vr-news-item__heading--ad span,
+.vr-hero__heading--ad span,
+.vr-news-item__heading--ad span {
+    -webkit-box-decoration-break: clone;
+}
+
+.notVoted .star{
+    cursor: pointer;
+}
+
+.star {
+    background: rgba(0, 0, 0, 0) url("/assets/img/star.png") no-repeat scroll 0 0;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.star_hover {
+    background: rgba(0, 0, 0, 0) url("/assets/img/star.png") no-repeat scroll 0 -20px;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+}
+
+.star_bar{
+    height: 20px;
+    overflow: hidden;
+}
+
+#to-top {
+    background-color: #fff;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+    right: 20px;
+    bottom: 20px;
+    position: fixed;
+    opacity: 0.7;
+    display: none;
+    z-index: 9999;
+}
+
+#to-top div {
+    border-right: 5px solid #000;
+    border-bottom: 5px solid #000;
+    width: 14px;
+    height: 14px;
+    transform: rotate(225deg);
+    margin: 9px auto;
+}
+
+#to-top:hover {
+    border-color: #000;
+    background-color: #000;
+}
+
+#to-top:hover div {
+    border-color: #fff;
+}
+
+.vr-branchenguide-detail-under-top--left--list img{
+    height: 30px;
+    width: auto;
+}
+
+@media (max-width: 767px) {
+    .vr-article .well,
+    .vr-related-themes .well{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
+
+a.no-hover-underline:hover{
+    text-decoration: none;
+}
+
+main{
+    min-height: 800px;
+}
+
+.starrating-widget .vr-article__metadata{
+    margin: 5px 0 15px 0;
+}
+
+.notVoted .star_bar[style]:hover{
+    background: #c2c2c2 !important;
+}
+
+.starrating-widget .ajax-status{
+    position: relative;
+    top: -15px;
+}
+
+.vr-article__metadata.border-top{
+    border-top: 1px solid #d1d1d1;
+    padding-top: 15px;
+}
+

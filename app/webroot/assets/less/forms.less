@@ -1,0 +1,51 @@
+// Forms
+
+label {
+  font-weight: 300;
+  color: #a6a6a6;
+  font-size: 1.4rem;
+  margin: 0;
+
+  @media (min-width: @grid-float-breakpoint) {
+    font-size: 1.6rem;
+  }
+}
+
+
+
+.form-control {
+  .box-shadow(none);
+  font-weight: 300;
+
+  input& {
+    -webkit-appearance: none;
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    font-size: 1.8rem;
+
+    input& {
+      height: 60px;
+    }
+  }
+}
+
+
+
+.has-error {
+  label {
+    color: @brand-primary;
+  }
+
+  .form-control {
+    border-color: @input-border;
+    border-bottom: 6px solid @brand-primary;
+    .box-shadow(none);
+  }
+}
+
+
+.help-block {
+  font-size: 1.2rem;
+  margin: 2px 0 0 0;
+}

@@ -1,0 +1,176 @@
+// Hero
+
+.vr-hero {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: #fff;
+  margin-top: -53px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    margin-top: -78px;
+  }
+
+  @media (max-width: @grid-float-breakpoint-max) {
+    background-image: none !important;
+  }
+
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &__heading {
+    margin: 0 0 5px 0;
+
+    &--ad {
+      text-align: right;
+
+      span {
+        padding: 0 10px 0 15px;
+        box-decoration-break: clone;
+        background: @brand-primary;
+      }
+    }
+
+    &--featured {
+      font-size: 26px;
+      line-height: 1.12;
+      margin-bottom: 10px;
+
+      @media (min-width: @grid-float-breakpoint) {
+        font-size: 56px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  &__list {
+    .hidden-xs;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    // max-width: 280px;
+    max-width: 300px;
+    float: right;
+
+    @media (min-width: @grid-float-breakpoint) {
+      li {
+        margin-bottom: 35px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__feature {
+    max-width: 285px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    @media (min-width: @grid-float-breakpoint) {
+      max-width: 585px;
+      position: relative;
+    }
+
+    .metadata {
+      @media (min-width: @grid-float-breakpoint) {
+        font-size: 16px;
+        position: relative;
+      }
+    }
+  }
+
+  &__image {
+    margin: -15px;
+
+    @media (min-width: @grid-float-breakpoint) {
+      display: none;
+    }
+  }
+}
+
+.vr-hero-grid {
+  min-height: 335px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    padding-top: 175px;
+    padding-bottom: 120px;
+  }
+
+  @media (min-width: 992px) {
+    display: table;
+    width: 100%;
+    margin: 0;
+  }
+
+  > div {
+
+    @media (min-width: 992px) {
+      display: table-cell;
+      vertical-align: bottom;
+      padding-left: 0;
+      padding-right: 0;
+      float: none;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+
+  .vr-hero-grid__col--featured {
+    margin-bottom: 45px;
+  }
+
+  .vr-hero__list {
+    float: none;
+    max-width: 100%;
+    text-align: left;
+    li {
+      float: left;
+      width: 33.33%;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .btn {
+      float: right;
+    }
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .vr-hero-grid {
+    min-height: 1px;
+  }
+
+  .vr-hero-grid__col--featured {
+    margin-bottom: 0;
+  }
+
+  .vr-hero__feature {
+    padding: 15px;
+  }
+
+
+}
+
+
+
+
+

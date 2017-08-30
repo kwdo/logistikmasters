@@ -1,0 +1,6 @@
+/app/Config/database.php
+/app/webroot/files/file_dir
+/app/webroot/files/uploads
+/app/webroot/files/user_profile
+/app/webroot/img/uploads
+/app/tmp

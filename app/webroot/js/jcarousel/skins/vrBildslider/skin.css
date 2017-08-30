@@ -1,0 +1,134 @@
+.jcarousel-skin-vrBildslider .jcarousel-container {
+	background:#f0f0f0;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-direction-rtl {
+	direction:rtl;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-container-horizontal {
+	width: 255px;
+	padding: 0 22px 0 23px;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-clip {
+	overflow:hidden;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-clip-horizontal {
+	width: 248x;
+	height: 77px;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-item {
+	width: 248px;
+	height:77px;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-item img{
+	border: 1px solid #000;
+	float:left;
+	margin-right: 5px;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-item a.text-link{
+	text-decoration: underline;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-item-horizontal {
+	margin: 0 4px;
+	padding: 0;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-direction-rtl .jcarousel-item-horizontal {
+	margin-left:10px;
+	margin-right:0;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-item-placeholder {
+	background:#fff;
+	color:#000;
+}
+
+/**
+ *  Horizontal Buttons
+ */
+.jcarousel-skin-vrBildslider .jcarousel-next-horizontal {
+	position:absolute;
+	top: 0px;
+	right: 0;
+	width:20px;
+	height:74px;
+	cursor:pointer;
+	background:transparent url(next-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-direction-rtl .jcarousel-next-horizontal {
+	left:5px;
+	right:auto;
+	background-image:url(prev-horizontal.png);
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-next-horizontal:hover,.jcarousel-skin-vrBildslider .jcarousel-next-horizontal:focus {
+	background-position:0 0;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-next-horizontal:active {
+	background-position:0 0;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-next-disabled-horizontal,.jcarousel-skin-vrBildslider .jcarousel-next-disabled-horizontal:hover,.jcarousel-skin-vrBildslider .jcarousel-next-disabled-horizontal:focus,.jcarousel-skin-vrBildslider .jcarousel-next-disabled-horizontal:active {
+	cursor:default;
+	background-position: -75px 0;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-prev-horizontal {
+	position:absolute;
+	top:0;
+	left:0;
+	width:20px;
+	height:74px;
+	cursor:pointer;
+	background:transparent url(prev-horizontal.png) no-repeat 0 0;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-direction-rtl .jcarousel-prev-horizontal {
+	left:auto;
+	right:5px;
+	background-image:url(next-horizontal.png);
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-prev-horizontal:hover,.jcarousel-skin-vrBildslider .jcarousel-prev-horizontal:focus {
+	background-position:0 0;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-prev-horizontal:active {
+	background-position:0 0;
+}
+
+.jcarousel-skin-vrBildslider .jcarousel-prev-disabled-horizontal,.jcarousel-skin-vrBildslider .jcarousel-prev-disabled-horizontal:hover,.jcarousel-skin-vrBildslider .jcarousel-prev-disabled-horizontal:focus,.jcarousel-skin-vrBildslider .jcarousel-prev-disabled-horizontal:active {
+	cursor:default;
+	background-position: -75px 0;
+}
+
+/* Branchenguide-Box Dossier */
+
+#bg-carousel {
+	margin-left:0;
+}
+.jcarousel-skin-vrBildslider.bg-carousel {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
+#bg-carousel li {
+	text-align:center;
+	width: 250px;
+	height:200px !important;
+}
+#bg-carousel div.jcarousel-clip{
+	height:200px !important;
+}
+#bg-carousel img {
+	float:none;
+}

@@ -1,0 +1,108 @@
+
+/* MEDIATHEK DETAILS SLIDER*/
+.vr-mediathek-detail-slider li{
+	position: relative;
+}
+.vr-mediathek-detail-slider__caption{
+	height: 60px;
+	background: -moz-linear-gradient(top, transparent 0%, transparent 24%, rgba(27,27,28,0.3) 70%, rgba(27,27,28,0.6) 92%, rgba(27,27,28,0.7) 100%);
+	background: -o-linear-gradient(top, transparent 0%, transparent 24%, rgba(27,27,28,0.3) 70%, rgba(27,27,28,0.6) 92%, rgba(27,27,28,0.7) 100%);
+	background: -ms-linear-gradient(top, transparent 0%, transparent 24%, rgba(27,27,28,0.3) 70%, rgba(27,27,28,0.6) 92%, rgba(27,27,28,0.7) 100%);
+}
+.vr-mediathek-detail-slider__caption-text{
+	position:  absolute;
+	bottom: 5px;
+	left: 35px;
+}
+.vr-mdeiathek-detail .lSSlideOuter .lSPager.lSGallery li {
+	filter: opacity(100%);
+	position: relative;
+}
+.vr-mediathek-details-slider-controls-button{
+	display: inline-block;
+	margin: 0 10px;
+	position: relative;
+	cursor: pointer;
+}
+.vr-mdeiathek-detail .lSSlideOuter{
+	margin-bottom: 40px;
+}
+.vr-mediathek-details-slider-controls{
+	position: relative;
+	margin-bottom: 60px;
+}
+.vr-mediathek-details-slider-controls::after, .vr-mediathek-details-slider-controls::before{
+	content: ' ';
+	display: inline-block;
+	width:  43%;
+	height: 2px;
+	background-color: #ebebeb;
+	position: absolute;
+	top: 50%;
+}
+.vr-mediathek-details-slider-controls::before{
+	left: 0;
+}
+.vr-mediathek-details-slider-controls::after{
+	right: 0;
+}
+
+/*Content*/
+
+.vr-mediathek-detail__heading{
+	margin-bottom: 50px;
+}
+.vr-mediathek-details-text-mb__40{
+	margin-bottom: 40px;
+}
+.vr-mediathek-details-text-mb__30{
+	margin-bottom: 30px;
+}
+.vr-mediathek-details-btn{
+	margin-bottom: 113px;
+}
+.well-mediathek-details{
+	padding-bottom: 40px;
+}
+.vr-mediatek-detail-wrapper{
+	margin-bottom: 0;
+}
+.vr-related-themes-grid__col-mediathek-ml{
+	margin-left: 8.33333333%;
+}
+.well-related-themes__mediathek-details{
+	padding-bottom: 60px;
+	margin-bottom: 60px;
+}
+.vr-mediathek-detail-slider img{
+	width: 100%;
+}
+
+
+
+/* Responsive*/
+
+@media (max-width: 767px){
+	.well-mediathek-details{
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.vr-related-themes-grid__col-mediathek-ml{
+	margin-left: 0;
+	}
+	.well-related-themes__mediathek-details{
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.vr-related-themes-grid__col__btn{
+		display: block;
+		text-align: center;
+	}
+	.vr-mediathek-details-slider-controls::after, .vr-mediathek-details-slider-controls::before{
+		width: 30%;
+	}
+}

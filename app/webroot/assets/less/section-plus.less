@@ -1,0 +1,126 @@
+// Home Section: Plus
+
+.vr-plus {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: hidden;
+
+  @media (min-width: @grid-float-breakpoint) {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+}
+
+.vr-plus-grid-l {
+  .make-row(20px);
+
+  @media (min-width: @grid-float-breakpoint) {
+    .make-row(50px);
+  }
+
+  &__col {
+    .make-xs-column(12);
+    // .make-sm-column(8,20px);
+    .make-sm-column(12,20px);
+    .make-md-column(9,20px);
+  }
+
+  &__featured {
+    .make-xs-column(12);
+    .make-sm-column(4,20px);
+    .make-md-column(3,20px);
+  }
+}
+
+.vr-plus-grid {
+  .make-row(20px);
+
+  &__col {
+    .make-xs-column(6);
+    .make-sm-column(4,20px);
+  }
+}
+
+.vr-plus-item {
+  background: #fff;
+  margin-bottom: 10px;
+  font-size: 13px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    font-size: 14px;
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    margin-bottom: 20px;
+  }
+
+  &__image {
+    position: relative;
+    display: block;
+  }
+
+  &__caption {
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    z-index: 1;
+    width: 100%;
+    padding: 0 15px;
+    color: #fff;
+    text-align: right;
+    line-height: 1.5;
+  }
+
+  &__info {
+    padding: 10px;
+
+    @media (min-width: @grid-float-breakpoint) {
+      padding: 15px 30px;
+    }
+  }
+
+  &__heading {
+    margin: 0 0 20px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__list {
+    .list-unstyled;
+    color: rgba(0,0,0,0.70);
+    margin: 0;
+
+    li {
+      margin-bottom: 5px;
+      line-height: 1.225;
+    }
+  }
+
+  &--featured {
+    background: #fff;
+    margin-bottom: 10px;
+    font-size: 13px;
+
+    @media (min-width: @grid-float-breakpoint) {
+      margin-bottom: 20px;
+      font-size: 14px;
+      border-bottom: 20px solid @body-bg;
+    }
+
+    p {
+      line-height: 1.45;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .vr-plus-item__info-text {
+    margin-bottom: 25px;
+  }
+
+}

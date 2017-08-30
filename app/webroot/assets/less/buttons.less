@@ -1,0 +1,130 @@
+// Buttons
+
+.btn {
+  font-family: @font-family-alt;
+  font-size: 10px;
+  min-width: 58px;
+  text-decoration: none;
+  text-transform: lowercase;
+
+  //.button-size(@padding-base-vertical; @padding-base-horizontal; @font-size-base; @line-height-base; @btn-border-radius-base);
+  .button-size(4px; 15px; 10px; 1.2; 20px);
+
+  // 22px height on mobiles; 29 height larg buttons on mobiles
+
+  @media (min-width: @grid-float-breakpoint) {
+    font-size: 14px;
+    min-width: 80px;
+    padding-top: @padding-base-vertical;
+    padding-bottom: @padding-base-vertical;
+  }
+
+  &,
+  &:active,
+  &.active {
+    &:focus,
+    &.focus {
+      .tab-focus();
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: @btn-default-color;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.active {
+    outline: 0;
+    background-image: none;
+    .box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+  }
+}
+
+
+.btn-lg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(7px; 20px; 13px; 1.05; 20px);
+  min-width: 115px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    font-size: 18px;
+    min-width: 150px;
+    padding-top: @padding-large-vertical;
+    padding-bottom: @padding-large-vertical;
+  }
+}
+
+
+.btn-default {
+  //.button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+  color: #fff !important;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: @brand-primary !important;
+    background: #fff;
+  }
+}
+
+
+.btn-primary {
+  //.button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
+  .button-variant(@brand-primary; #f6f6f6; #f6f6f6);
+  color: @brand-primary !important;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    border-color: @brand-primary;
+    background: #fff;
+    color: @brand-primary !important;
+  }
+}
+
+
+.btn-shop {
+  .button-variant(#fff; #05a905; #05a905);
+  color: #fff !important;
+
+  &:hover,
+  &:focus,
+  &.focus {
+    color: #05a905 !important;
+    background: #fff;
+  }
+}
+
+
+//
+
+.btn-link {
+  color: #000;
+  text-transform: none;
+  min-width: 0;
+  padding-left: 0;
+  padding-right: 0;
+
+  &:hover {
+    text-decoration: none;
+    color: @brand-primary;
+  }
+  &:focus,
+  &.focus {
+    color: @brand-primary;
+  }
+}
+
+
+//
+.vr-icon--btn-arrow {
+  background: url("@{icon-path}icon-arrow-btn.png") no-repeat center;
+  background-size: 17px 14px;
+  display: inline-block;
+  width: 17px;
+  height: 14px;
+  vertical-align: middle;
+}

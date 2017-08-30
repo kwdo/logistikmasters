@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer,
+.vr-banner__top-container,
+.vr-banner__left,
+.vr-banner__right,
+h1.h-section,
+a.btn {
+    display: none;
+}
+
+.col-print {
+    width: 100%;
+}

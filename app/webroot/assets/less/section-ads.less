@@ -1,0 +1,57 @@
+// Home: Ads
+
+.vr-ad__block-01 {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.vr-ad__block-02 {
+  margin: 20px 0 30px 0;
+  text-align: center;
+}
+
+.vr-ad__block-03 {
+  margin: 30px 0;
+  text-align: center;
+
+  @media (min-width: @grid-float-breakpoint) {
+    margin: 40px 0;
+  }
+}
+
+.vr-ad {
+  &__leaderboard {
+    text-align: right;
+    margin-bottom: 30px;
+  }
+
+  &__billboard {
+    text-align: center;
+  }
+
+  &__sky {
+    position: absolute;
+    left: 100%;
+    top: 0;
+  }
+
+  &__halfpage {
+    position: absolute;
+    right: 100%;
+    top: 100%;
+    margin-right: 25px;
+  }
+}
+
+.vr-ad-item {
+  &__news {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.container-ad {
+  position: relative;
+  padding: 0;
+}

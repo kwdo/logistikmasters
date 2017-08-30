@@ -1,0 +1,171 @@
+.well-brenchenguide-liste{
+	padding-top: 0;
+}
+
+/*VR-BRENCHENGUIDE-LISTE-MAIN-ROW*/
+.vr-brenchenguide-liste-main-row{
+	border:  1px solid #eeeeee;
+	padding-top: 18px;
+	padding-bottom: 7px;
+	padding-left: 15px;
+	margin-bottom: 28px;
+}
+.vr-brenchenguide-liste-main-row-address{
+	display: inline-block;
+	color:  #666666;
+	font-size: 14px;
+	position: relative;
+}
+.vr-brenchenguide-liste-main-row-address::before{
+	content: '\f041';
+	font: normal normal normal 14px/1 FontAwesome;
+	color:  #666666;
+	display:  inline-block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: -18px;
+	top: 4px;
+}
+.vr-brenchenguide-liste-main-row-contacts{
+	padding-left: 0;
+	font-size: 14px;
+	margin: 0;
+}
+.vr-brenchenguide-liste-main-row-contacts li{
+	padding-left: 20px;
+	position: relative;
+	color:  #666666;
+}
+
+.vr-brenchenguide-liste-main-row-contacts li::before{
+	font: normal normal normal 14px/1 FontAwesome;	
+	display:  inline-block;
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	left: 0;
+	top: 7px;
+	color:  #666666;
+}
+.vr-brenchenguide-liste-main-row-contacts__phone::before{
+	content: '\f095';
+}
+.vr-brenchenguide-liste-main-row-contacts__fax::before{
+	content: '\f1ac';
+}
+.vr-brenchenguide-liste-main-row-contacts__email::before{
+	content: '\f003';
+}
+.vr-brenchenguide-liste-main-row-contacts__site::before{
+	content: '\f0ac';
+}
+.vr-brenchenguide-liste-main-row-logo img{
+	width: 100%;
+}
+.vr-brenchenguide-liste-main-row-name{
+	display: inline-block;
+	margin: 0;
+	vertical-align: middle;
+	line-height: 1.5;
+}
+.vr-brenchenguide-liste-main-vertical-parent{
+	display: table;
+	width: 100%;
+	height: 100%;
+}
+.vr-brenchenguide-liste-main-vertical-middle{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*COMMERC*/
+
+.vr-brencheguiden-liste-main-commerc{
+	margin-top: 70px;
+	margin-bottom: 75px;
+}
+
+.vr-brencheguiden-liste-main-commerc .vr-commerc{
+	padding-left: 40%;
+	padding-top: 10px;
+	padding-bottom: 23px;
+	background-color: #05a905;
+}
+.vr-brencheguiden-liste-main-commerc .vr-commerc-content__title{
+	margin-bottom: 5px;
+}
+.vr-brencheguiden-liste-main-commerc .vr-commerc-content__text{
+	margin-bottom: 0;
+}
+.vr-brencheguiden-liste-main-commerc .vr-commerc-img{
+	left: -16px;
+	top: -21px;
+	width: 45%;
+}
+.vr-brenchenguide-liste-main-upgr-btn{
+	padding-right: 30px;
+}
+.vr-brencheguiden-liste-main-commerc .vr-commerc-img img{
+	width: 100%;
+}
+
+/*RESPONSIVE*/
+
+@media (max-width: 991px){
+	.vr-brenchenguide-liste-main-row-logo img{
+		width: 35%;
+		display: block;
+	}
+	.vr-brencheguiden-liste-main-commerc .vr-commerc{
+		padding-left: 15px;
+	}
+	.vr-brencheguiden-liste-main-commerc .vr-commerc-img{
+		display:  block;
+		width:  100%;
+	}
+	.vr-brencheguiden-liste-main-commerc .vr-commerc-img img{
+		width: auto;
+	}
+	.vr-brencheguiden-liste-main-commerc .vr-commerc{
+		padding-bottom: 43px;
+	}
+	.vr-brenchenguide-liste-main-upgr-btn > div{
+		text-align: left;
+	}
+}
+
+@media (max-width: 767px){
+	.well-brenchenguide-liste{
+		margin-left: 0;
+		margin-right: 0;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.vr-brencheguiden-liste-main-commerc .vr-commerc{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.vr-brencheguiden-liste-main-commerc .vr-commerc-img img{
+		width: 100%;
+	}
+	.vr-brencheguiden-liste-main-commerc .vr-commerc-img{
+		left: 0;
+	}
+	.vr-brenchenguide-start-filters__search-field--longer{
+		width: 100%;
+	}
+	.vr-brenchenguide-liste-main-row-address{
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+	.vr-brenchenguide-liste-main-row-address{
+		padding-left: 15px;
+	}
+	.vr-brenchenguide-liste-main-row-address::before{
+		left: 0;
+	}
+	.vr-brenchenguide-filters__search--border{
+		border:  none;
+	}
+}

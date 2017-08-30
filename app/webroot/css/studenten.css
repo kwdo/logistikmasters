@@ -1,0 +1,980 @@
+#content h1 {
+    margin-bottom: 25px;
+}
+
+.nomargin {
+    margin: 0;
+}
+
+.formsList {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.formsList a, .formsList span {
+    color: #325B87;
+}
+
+.formsList a.first {
+    font-weight: bold;
+    padding-left: 8px;
+    background: url(../img/backgrounds/arrowBlueBold.gif) no-repeat 0px 5px;
+}
+
+.formsList img {
+    margin-left: 8px;
+}
+
+.formsList span {
+    float: right;
+    width: 300px;
+    color: black;
+}
+
+.formsList.unstarted span {
+    color: #325B87;
+    font-weight: bold;
+}
+
+.formsList.unstarted,
+.formsList.started,
+.formsList.mail,
+.formsList.finished {
+    padding-left: 30px;
+    background-repeat: no-repeat;
+    background-position: 4px 4px;
+}
+
+.formsList.unstarted {
+    background-image: url(../img/iconUnstarted.png);
+    background-color: #CEE4F3;
+}
+
+.formsList.started {
+    background-image: url(../img/iconStarted.png);
+}
+
+.formsList.mail {
+    background-image: url(../img/iconMail.png);
+}
+
+.formsList.finished {
+    background-image: url(../img/iconFinished.png);
+}
+
+#flashMessage {
+    margin: 15px 0;
+    color: #fff;
+}
+
+.box.bluer h3 {
+    background-color: #C9E2F2;
+    color: #325B87;
+    text-transform: none;
+    line-height: 18px;
+}
+
+.box.bluer {
+    border-color: #EEF6FB;
+}
+
+.box.bluer h3,
+.box.bluer .content {
+    border-color: #CCE3F2;
+}
+
+.box.bluer .content {
+    border-top-color: #D2D5D6;
+    background-color: white;
+}
+
+.box .content img {
+    float: none;
+    max-width: 600px;
+    margin: 10px 0 20px 0;
+}
+
+#boxes .box .content img.right {
+    float: right;
+}
+
+.box .serviceBox.content img {
+    margin-top: 0;
+}
+
+.box.blocked {
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.box.blocked h3 {
+    text-transform: none;
+}
+
+.box h3 .number {
+    float: left;
+    width: 30px;
+    font-size: 12px;
+}
+
+.boxLink.blue.back {
+    background-image: url(../img/backgrounds/arrowBlueBoldMirror.gif) no-repeat;
+    margin-right: 10px;
+}
+
+.blue {
+    color: #325B87;
+}
+
+#content a.more.blue {
+    font-weight: bold;
+    background-image: url(../img/backgrounds/arrowBlueBold.gif);
+}
+
+.box h3.special {
+    background-repeat: no-repeat;
+    background-position: 5px 7px;
+    line-height: 12px;
+    text-transform: none;
+}
+
+.box h3.special p {
+    margin: 5px 0 0 0;
+}
+
+.box h3.special img {
+    float: left;
+    margin-right: 12px;
+}
+
+.box h3.special .head span {
+    text-transform: uppercase;
+}
+
+.box h3.special .text {
+    font-weight: normal;
+}
+
+.box .content .special {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.box .content .special span {
+    font-size: 12px;
+}
+
+#mainframe.masters h2,
+#mainframe.masters .catalog h3 a,
+#mainframe.masters h3 {
+    color: #245c88;
+    font-weight: bold;
+}
+
+#mainframe.masters .catalog h3 a,
+#mainframe.masters .catalog h3 {
+    margin-bottom: 4px;
+}
+
+#mainframe.masters h2 {
+    margin: 10px 0 15px 0;
+    color: #245c88;
+    padding-top: 5px;
+    border-top: 1px solid #d2d2d2;
+}
+
+#mainframe.masters .paging {
+    margin-top: 10px;
+    float: right;
+}
+
+#mainframe.masters .paging a {
+    color: black;
+}
+
+#mainframe.masters .paging .current {
+    font-weight: bold;
+}
+
+dl.catalog {
+    border: 0 !important;
+}
+
+.catalog dt {
+    float: left;
+    font-weight: bold;
+}
+
+.catalog dd {
+    margin-left: 300px;
+}
+
+.catalog img {
+    float: left;
+    margin-right: 10px;
+    max-height: 60px;
+    border: 1px solid #cecabf;
+}
+
+img.catalog {
+    float: left;
+    margin-right: 10px;
+    margin-top: 0.5em;
+    border: 1px solid #cecabf;
+}
+
+.clear {
+    clear: both;
+}
+
+h2 {
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+}
+
+.contactForm label {
+    display: block;
+}
+
+.contactForm .input,
+.captcha_input {
+    margin-bottom: 5px;
+}
+
+/* New styles */
+#mainframe.master #boxes {
+    padding-bottom: 15px;
+}
+
+#mainframe .navi3 {
+    padding: 0;
+    margin-top: 0;
+}
+
+#mainframe .navi3 ul {
+    list-style: none;
+}
+
+.clearBoth {
+    clear: both;
+}
+
+#mainframe {
+    width: 961px;
+}
+
+#logo {
+    border: 0;
+}
+
+#content h4 {
+    padding-top: 0;
+}
+
+#mainframe.azubi .containerHead h3 a, #mainframe.azubi .containerHead h3, #mainframe.azubi .containerHead .containerContent h4 a, #mainframe.azubi .containerHead .containerContent h5 a {
+    color: white !important;
+}
+
+/* Logistik Masters */
+
+#mainframe.master hr {
+    clear: both;
+    margin: 8px 0;
+    height: 1px;
+    border: 0px;
+    border-bottom: 1px solid #004C9D;
+}
+
+#mainframe.master .boxStyle-1 h5 {
+    background-color: #092759;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    height: 18px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+}
+
+.master .loginBox .boxLink {
+    margin-left: 10px;
+    color: #004C9D !important;
+    background-color: white;
+    margin-bottom: 5px;
+}
+
+.master .boxLink {
+    font-weight: bold;
+    color: #004C9D;
+    display: block;
+    float: right;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 6px;
+    border: 1px solid #999999;
+    background-color: white;
+}
+
+.master #content .contentBlock h3 {
+    margin-top: 0.5em;
+    color: #004C9D;
+    font-size: 11px;
+}
+
+.master #content .contentBlock h3 {
+    margin-top: 0.5em;
+    color: #004C9D;
+    font-size: 11px;
+}
+
+.masterlist {
+    margin: 20px 0 10px 0;
+    border-right: 1px solid #CAE1F0;
+    border-top: 1px solid #CAE1F0;
+}
+
+.masterlist td {
+    vertical-align: top;
+    padding: 3px;
+    border-left: 1px solid #CAE1F0;
+    border-bottom: 1px solid #CAE1F0;
+}
+
+.masterlist th {
+    background-color: #B2D5EC;
+    border-bottom: 1px solid #CAE1F0;
+    color: #172F48;
+    text-align: left;
+    padding: 3px;
+    border-left: 1px solid #CAE1F0;
+    border-bottom: 1px solid #CAE1F0;
+}
+
+#catalogBox select {
+    display: block;
+}
+
+/* Best Azubi */
+
+#mainframe.azubi hr {
+    clear: both;
+    margin: 8px 0;
+    height: 1px;
+    border: 0px;
+    border-bottom: 1px solid #cdcabf;
+}
+
+#mainframe.azubi .boxStyle-1 {
+    border: 1px solid #f68004;
+}
+
+#mainframe.azubi .boxStyle-1 h5 {
+    color: #215c43;
+    border-bottom: 1px solid #f68004;
+    font-size: 11px;
+}
+
+#mainframe.azubi a {
+    color: #f68004;
+    font-weight: normal;
+}
+
+#mainframe.azubi .boxStyle-1.loginBox {
+    padding: 0;
+}
+
+#mainframe.azubi .boxStyle-1.loginBox h5 {
+    background-color: #f68004;
+    color: white;
+    padding: 2px 5px;
+    border-bottom: 1px solid #cbccbe;
+}
+
+.boxStyle-1.loginBox .content {
+    padding: 2px 5px;
+}
+
+.loginBox {
+    width: 300px;
+}
+
+.loginBox .styledInput {
+    width: 170px;
+    padding: 1px;
+    font-size: 11px;
+}
+
+.loginBox table {
+    margin: 0;
+}
+
+.azubi .loginBox .boxLink {
+    margin-left: 10px;
+    color: white !important;
+    background-color: #f68004;
+    margin-bottom: 5px;
+}
+
+.boxStyle-1 .serviceBox .floatLeft,
+.boxStyle-1 .serviceBox .floatRight {
+    width: 142px;
+    margin: 5px 0 !important;
+}
+
+.boxStyle-1 .serviceBox img {
+    float: none;
+    vertical-align: middle;
+    margin-bottom: 0px;
+    margin-right: 5px;
+}
+
+.boxStyle-1 .serviceBox a {
+    font-weight: bold !important;
+    font-size: 10px;
+}
+
+.azubi .boxLink {
+    font-weight: normal;
+    color: #f68004;
+    display: block;
+    float: right;
+    position: relative;
+    text-align: center;
+    margin-top: 5px;
+    padding: 0 6px;
+    border: 1px solid #f68004;
+    background-color: #f9f5e8;
+}
+
+.panorama {
+    margin: 10px 5px;
+}
+
+.panorama img {
+    margin-bottom: 10px;
+}
+
+#sitenavi ol {
+    margin: 10px 25px;
+}
+
+.azubi #content .contentBlock h3 {
+    margin-top: 0.5em;
+    color: #2D5644;
+    font-size: 11px;
+}
+
+#mainframe.azubi #content .boxStyle-1 {
+    background-color: #f9f5e9;
+}
+
+#mainframe.azubi .boxStyle-1.navi3 {
+    border: 1px solid #245B44;
+    width: 298px;
+}
+
+#mainframe.azubi .boxStyle-1.navi3 ul li {
+    background: url(/fm/3573/bg_navi_right.png) no-repeat;
+    height: 28px;
+    padding-left: 33px;
+}
+
+#mainframe.azubi .boxStyle-1.navi3 ul li a {
+    line-height: 26px;
+    height: 26px;
+    display: block;
+    border-top: 1px solid #377251;
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #377251;
+    text-decoration: none;
+}
+
+h2.best-azubi {
+    color: #225C43;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.master h2.best-azubi {
+    color: #004C9D;
+}
+
+#content h3.best-azubi {
+    color: #225C43;
+    font-size: 12px;
+}
+
+#content h3.best-azubi span {
+    background-color: #F68004;
+    color: #FFF;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 5px;
+}
+
+#mainframe.azubi .boxStyle-1.navi3 ul li a:hover,
+#mainframe.azubi .boxStyle-1.navi3 ul li.active a {
+    color: #f68004;
+    border-top: 1px solid #f68004;
+}
+
+#mainframe.azubi #boxes #boxesBorders .serviceBox .floatLeft,
+#mainframe.azubi #boxes #boxesBorders .serviceBox .floatRight {
+    width: 140px;
+    height: 44px;
+    position: relative;
+}
+
+#content.print .box {
+    width: auto;
+    float: none;
+}
+
+#mainframe .navi3 {
+    padding: 0;
+    margin-top: 0;
+}
+
+#mainframe .navi3 ul {
+    list-style: none;
+}
+
+#boxes .lm {
+    border: none;
+}
+
+#boxes .lm ul li {
+    background: #f0f0f0;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f0f0', endColorstr='#d9d8dd');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#d9d8dd));
+    background-image: -webkit-linear-gradient(top, #f0f0f0, #d9d8dd);
+    background-image: -moz-linear-gradient(top, #f0f0f0, #d9d8dd);
+    background-image: -ms-linear-gradient(top, #f0f0f0, #d9d8dd);
+    background-image: -o-linear-gradient(top, #f0f0f0, #d9d8dd);
+    background-image: linear-gradient(top, #f0f0f0, #d9d8dd);
+    color: #1E4C7A;
+    text-decoration: none;
+    margin-bottom: 2px;
+    padding-left: 0;
+}
+
+#boxes .lm ul li:hover, #boxes .lm ul li.active {
+    background: #d3d3d3;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d3d3d3', endColorstr='#dcdcdc');
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d3d3d3), to(#dcdcdc));
+    background-image: -webkit-linear-gradient(top, #d3d3d3, #dcdcdc);
+    background-image: -moz-linear-gradient(top, #d3d3d3, #dcdcdc);
+    background-image: -ms-linear-gradient(top, #d3d3d3, #dcdcdc);
+    background-image: -o-linear-gradient(top, #d3d3d3, #dcdcdc);
+    background-image: linear-gradient(top, #d3d3d3, #dcdcdc);
+    color: #1E4C7A;
+    text-decoration: none;
+    margin-bottom: 2px;
+    padding-left: 0;
+}
+
+#mainframe.azubi #boxes a {
+    color: #1E4C7A;
+    font-weight: normal;
+}
+
+#boxes .lm ul li a:hover, #boxes .lm ul li.active a, #boxes .lm ul li.active a:hover, #boxes .lm ul li a:hover {
+    border-top: 0;
+    color: #1E4C7A;
+}
+
+#boxes .lm ul li a {
+    border-top: 0;
+    color: #004C9D;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 38px;
+    text-decoration: none;
+    background: url("/img/blue_arrow.png") no-repeat 16px center;
+}
+
+div.infobox {
+    background: #ebebeb;
+    border: 1px solid #d1d1d1;
+    padding: 20px 25px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    margin-bottom: 25px;
+}
+
+div.infobox h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#content div.infobox p {
+    color: #333;
+}
+
+form#lmSearchForm {
+    margin-right: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#mainframe #content .half {
+    padding: 0;
+    width: 300px !important;
+    float: left !important;
+    clear: none;
+}
+
+.half h3 {
+    font-weight: normal;
+}
+
+.half select {
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    height: 28px;
+    font-family: Verdana;
+}
+
+.half.mr {
+    margin-right: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.borderless {
+    border: none;
+}
+
+div.pokal {
+    width: 200px;
+    height: 200px;
+    background: url("http://www.verkehrsrundschau.de/bestazubi-forum/img/backgrounds/pokal.png") no-repeat;
+    float: left;
+    position: relative;
+    margin-right: 6px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+div.pokal.noBg {
+    background-image: none;
+    background-color: #fff;
+    cursor: default;
+    border: 1px solid rgb(210, 210, 210);
+    height: 198px;
+    width: 198px;
+}
+
+div.pokal span.vita {
+    position: absolute;
+    color: white;
+    left: 25px;
+    top: 130px;
+}
+
+div.pokal span.rank {
+    position: absolute;
+    left: 140px;
+    top: 130px;
+    font-size: 24px;
+    color: white;
+}
+
+div.pokal span.picture {
+    position: absolute;
+    top: 15px;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+}
+
+div.pokal span.name,
+div.pokal span.points {
+    position: absolute;
+    width: 200px;
+    text-align: center;
+}
+
+div.pokal span.name {
+    top: 80px;
+    font-weight: bold;
+}
+
+div.pokal span.points {
+    top: 98px;
+}
+
+div.pokal span.picture img {
+    max-height: 60px;
+}
+
+div.pokal {
+    width: 200px;
+    height: 200px;
+    background: url("http://www.verkehrsrundschau.de/bestazubi-forum/img/backgrounds/pokal.png") no-repeat;
+    float: left;
+    position: relative;
+    margin-right: 6px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+div.pokal span.vita {
+    position: absolute;
+    color: white;
+    left: 25px;
+    top: 130px;
+}
+
+div.pokal span.rank {
+    position: absolute;
+    left: 140px;
+    top: 130px;
+    font-size: 24px;
+    color: white;
+}
+
+div.pokal span.picture {
+    position: absolute;
+    top: 15px;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+}
+
+div.pokal span.name,
+div.pokal span.points {
+    position: absolute;
+    width: 200px;
+    text-align: center;
+}
+
+div.pokal span.name {
+    top: 80px;
+    font-weight: bold;
+}
+
+div.pokal span.points {
+    top: 98px;
+}
+
+div.pokal span.picture img {
+    max-height: 60px;
+}
+
+div.pokal.liste {
+    background: url("http://www.verkehrsrundschau.de/bestazubi-forum/img/backgrounds/pokal-liste.png") no-repeat;
+}
+
+div.pokal span.rank.liste {
+    left: 0px;
+    width: 200px;
+    text-align: center;
+    top: 105px;
+    color: #092759;
+    font-size: 12px;
+}
+
+div.pokal span.vita.liste {
+    left: 65px;
+    top: 160px;
+}
+
+div.pokal span.points.liste {
+    top: 120px;
+}
+
+.UserView div.infobox {
+    padding-left: 55px;
+    padding-top: 35px;
+}
+
+.UserView div.userOverview {
+    float: left;
+    width: 350px;
+}
+
+.UserView dt {
+    margin-left: 55px;
+}
+
+.UserView dt,
+.UserView dd {
+    line-height: 20px;
+    color: #333;
+}
+
+.UserView div.infobox dt {
+    width: 140px;
+}
+
+.UserView div.infobox dt,
+.UserView div.infobox dd {
+    margin: 0;
+    line-height: 25px;
+}
+
+.UserView dd {
+    width: auto;
+}
+
+.UserView img {
+    max-width: 130px;
+    max-height: 160px;
+    margin-right: 50px !important;
+    margin-bottom: 25px;
+}
+
+.UserView div.infobox h3 {
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.UserView dl.catalog {
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.UserView div.infobox dl.catalog {
+    margin-top: 40px;
+}
+
+.UserView h2,
+#mainframe.azubi h2 {
+    height: 22px;
+    line-height: 22px;
+    background: #f0f0f0;
+    border: none;
+    color: #1e4c7a;
+    font-size: 13px;
+    padding-left: 55px;
+}
+
+.UserView dt.normal {
+    font-weight: normal;
+}
+
+.paging.lm {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.UserView a.boxLink {
+    border-radius: 4px;
+    width: 204px;
+    height: 28px;
+    line-height: 28px;
+    padding-left: 16px;
+    background: #092759;
+    background-image: -moz-linear-gradient(to bottom, rgb(32, 74, 116), rgb(13, 51, 96));
+    background-image: -webkit-linear-gradient(top, rgb(32, 74, 116), rgb(13, 51, 96));
+    background-image: linear-gradient(top, rgb(32, 74, 116), rgb(13, 51, 96));
+    color: white;
+    font-size: 16px;
+    font-family: Verdana, Helvetica, Arial;
+    letter-spacing: 0.2px;
+    font-weight: lighter;
+    text-align: left;
+    border: none;
+}
+
+a.boxLink.gray {
+    background: #999999;
+    background-image: -moz-linear-gradient(to bottom, rgb(241, 241, 241), rgb(221, 221, 221));
+    background-image: -webkit-linear-gradient(top, rgb(241, 241, 241), rgb(221, 221, 221));
+    background-image: linear-gradient(top, rgb(241, 241, 241), rgb(221, 221, 221));
+    color: #092759;
+    float: left;
+    margin-left: 10px;
+}
+
+#page {
+    background: white;
+}
+
+#page::after {
+    content: " ";
+    clear: both;
+    float: none;
+    height: 0;
+    display: block;
+}
+
+div#content {
+    width: 650px;
+}
+
+div#content div.infobox {
+    padding: 15px;
+}
+
+.catalog dd {
+    margin-top: 0;
+    background: none !important;
+}
+
+.catalog dt {
+    margin-top: 0;
+    background: none !important;
+    width: auto;
+}
+
+.UserView dl.catalog {
+    width: 100%;
+}
+
+h2.vr-sidebar__heading {
+    border: none;
+}
+
+h2.vr-foot__heading--newsletter {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    float: left;
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 44px;
+    margin: 0px 25px 0px 0px;
+    text-transform: uppercase;
+    border: none;
+}
+
+#NewsletterFooterForm div {
+    clear: none;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+.vr-foot hr {
+    border: 0px none rgb(128, 128, 128);
+    border-top: 2px solid rgb(27, 68, 108);
+    box-sizing: content-box;
+    color: rgb(128, 128, 128);
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    height: 0px;
+    margin: 25px 0px;
+}
+
+footer li a {
+    font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ul.sponsorbox li {
+    display: block;
+}

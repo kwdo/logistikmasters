@@ -1,0 +1,69 @@
+// Section: Related Themes
+
+.well-related-themes {
+  padding-top: 35px;
+  padding-bottom: 5px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    padding-top: 45px;
+    padding-bottom: 110px;
+  }
+}
+
+
+.vr-related-themes-grid {
+  .make-row(); //adjust width on mobile
+
+  &__col {
+    .make-xs-column(6, 10);
+    .make-lg-column(2);
+
+    &:first-child {
+      .make-lg-column-offset(1);
+    }
+
+    @media (min-width: @grid-float-breakpoint) and (max-width: @screen-md-max) {
+      width: 20%;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}
+
+.vr-related-themes-item {
+  margin-bottom: 50px;
+
+  @media (min-width: @grid-float-breakpoint) {
+    margin-bottom: 0;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  p:not(.metadata) {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  &__heading {
+    margin: 0 0 18px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__image {
+    display: block;
+    font: 0/0 a;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

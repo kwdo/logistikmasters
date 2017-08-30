@@ -1,0 +1,61 @@
+// Home Section: Media
+
+.vr-action {
+  font: 0/0 a;
+
+   @media (max-width: @grid-float-breakpoint-max) {
+    background: #fff;
+    padding-top: 15px;
+    padding-bottom: 5px;
+  }
+
+  &__gallery {
+    background: #fff;
+
+    @media (min-width: @grid-float-breakpoint) {
+      padding: 35px;
+    }
+
+    .owl-nav {
+      @media (max-width: @grid-float-breakpoint-max) {
+        display: none;
+      }
+    }
+
+    .owl-next,
+    .owl-prev {
+      position: absolute;
+      top: 50%;
+      margin-top: -22px;
+      width: 43px;
+      height: 45px;
+      background: #000;
+
+      &:before {
+        content: " ";
+        width: 43px;
+        height: 45px;
+        display: block;
+        margin: 0 auto 15px auto;
+      }
+    }
+
+    .owl-next {
+      right: 0;
+    }
+
+    .owl-prev {
+      left: 0;
+    }
+
+    .owl-prev:before {
+      background: url("@{icon-path}icon-arrow-mediathek-left.svg") no-repeat center;
+      background-size: 23px 23px;
+    }
+
+    .owl-next:before {
+      background: url("@{icon-path}icon-arrow-mediathek-right.svg") no-repeat center;
+      background-size: 23px 23px;
+    }
+  }
+}
