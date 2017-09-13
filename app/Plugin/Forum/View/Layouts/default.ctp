@@ -153,5 +153,6 @@ $html = $dom->saveHTML();
 // Transform old /fm to /sixcms/media.php
 //$html = str_replace('"/fm/', '"' . $oldPage . '/sixcms/media.php/', $html);
 $html = str_replace(array('"/fm/','<html>','<body>','</html>','</body>','<footer'), array('"' . $oldPage . '/sixcms/media.php/','','','','','</div><footer'), $html);
+$html = str_replace('</head>', $this->element('google_analytics') . PHP_EOL . '</head>', $html);
 
-echo $html;
+echo $html, '</body></html>';
