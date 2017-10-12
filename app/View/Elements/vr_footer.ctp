@@ -1,12 +1,10 @@
 <div id="boxes">
     <div class="rectangleBox">
-        <!-- Beginning Sync AdSlot 1 for Ad unit GE-B2B-VERKEHRSRUNDSCHAU/logistik_masters ### size: [[300,250],[300,500],[300,600]]  -->
-        <div id='div-gpt-ad-253562757510569145-1'>
-            <script type='text/javascript'>
-                googletag.display('div-gpt-ad-253562757510569145-1');
+        <div id='Ad_Rectangle1'>
+            <script>
+              googletag.display('Ad_Rectangle1');
             </script>
         </div>
-        <!-- End AdSlot 1 -->
     </div>
     <div class="box freitext loginBox">
         <?php if (AuthComponent::user('id')): ?>
@@ -165,7 +163,146 @@
     <?php endif; ?>
     <?php echo $this->element('boxes', array('cache' => array('key' => 'boxes', 'time' => '+1 hour'))); ?>
 </div>
+</div>
+</div>
+</section>
 <div class="clear"></div>
+<footer class="vr-foot vr-home-foot"><div style="display:none;">
+    <span itemprop="author publisher" itemscope itemtype="http://schema.org/Organization">
+                <span itemprop="name"><a itemprop="url" href="https://www.verkehrsrundschau.de">VerkehrsRundschau</a></span>
+                <span itemprop="telephone">+49 89 2030431100</span>
+                                <div itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
+                    <img itemprop="url" src="https://www.verkehrsrundschau.de/media/cache/my_strip_filter/sixcms/media.php/1768/vr_logo.png" width="1000px" height="588px"><span itemprop="width">1000px</span>
+                    <span itemprop="height">588px</span>
+                </div>
+                            </span>
+    </div>
+    <div class="wrap">
+        <div class="container container--alt">
+            <ul class="nav-social visible-xs">
+                <li>
+                    <a href="#">
+                        <span class="fa fa-facebook-f"></span>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-twitter"></span>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="fa fa-youtube"></span>
+                        <span class="sr-only">YouTube</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="https://www.facebook.com/verkehrsrundschau" target="_blank">
+                        <span class="fa fa-facebook-f"></span>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/vr_online" target="_blank">
+                        <span class="fa fa-twitter"></span>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/VerkehrsRundschau" target="_blank">
+                        <span class="fa fa-youtube"></span>
+                        <span class="sr-only">YouTube</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+            <div class="row">
+                <div class="col-sm-5 js-home-footer-col">
+                    <div class="vertical-parent">
+                        <div class="vertical-child">
+                            <ul class="nav-social hidden-xs">
+                                <li>
+                                    <a href="https://www.facebook.com/verkehrsrundschau" target="_blank">
+                                        <span class="fa fa-facebook-f"></span>
+                                        <span class="sr-only">Facebook</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/vr_online" target="_blank">
+                                        <span class="fa fa-twitter"></span>
+                                        <span class="sr-only">Twitter</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/user/VerkehrsRundschau" target="_blank">
+                                        <span class="fa fa-youtube"></span>
+                                        <span class="sr-only">YouTube</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-7 js-home-footer-col">
+                    <form action="https://registrierung.springerfachmedien-muenchen.de/app/index?execution=e2s1" id="NewsletterFooterForm" target="_blank">
+                        <div class="vr-foot__newsletter">
+                            <h2 class="vr-foot__heading vr-foot__heading--newsletter hidden-xs">Newsletter</h2>
+                            <div class="input-group vr-foot__form">
+                                <input type="email" name="email" class="form-control" placeholder="E-mail adresse"><span class="input-group-btn">
+                                    <button class="btn btn-newsletter" onclick="document.getElementById('NewsletterFooterForm').submit();">
+                                      <span class="vr-icon--envelope"></span>
+                                      <span class="sr-only">Senden</span>
+                                    </button>
+                                  </span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <!-- begin src/AppBundle/Resources/views/Navigation/navigation_footernavi.html.twig --><ul class="nav-legal" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                <li><a href="https://www.verkehrsrundschau.de/aboplus/vr-abo-1733583.html">
+                        Abo-Angebote
+                    </a></li>
+                <li><a href="https://www.heinrich-vogel-shop.de/index.html?utm_source=VR%20Website&amp;utm_medium=Hauptnavi&amp;utm_campaign=VR_Traffic_Shop" target="_blank">
+                        Shop
+                    </a></li>
+                <li><a href="https://www.verkehrsrundschau.de/kontakt">
+                        Kontakt
+                    </a></li>
+                <li><a href="https://www.mediacentrum.de/sixcms/detail.php?id=1547810" target="_blank">
+                        Mediadaten
+                    </a></li>
+                <li><a href="https://www.mediacentrum.de/sixcms/detail.php?id=1547823" target="_blank">
+                        Rubrikanzeigen
+                    </a></li>
+                <li><a href="https://www.verkehrsrundschau.de/impressum">
+                        Impressum
+                    </a></li>
+                <li><a href="https://www.verkehrsrundschau.de/agb">
+                        AGB
+                    </a></li>
+                <li><a href="https://www.verkehrsrundschau.de/datenschutz">
+                        Datenschutz
+                    </a></li>
+            </ul>
+            <!-- end src/AppBundle/Resources/views/Navigation/navigation_footernavi.html.twig -->
+        </div>
+
+        <div class="springer-nature-footer springer-nature-footer-reverse">
+            <div style="max-width:800px;margin:0;">
+                <a class="springer-nature-footer-logo" href="http://www.springernature.com" target="_blank"></a>
+                <p>© 2017 Springer Fachmedien München. Part of <a href="http://www.springernature.com" target="_blank">Springer Nature</a>.</p>
+            </div>
+        </div>
+
+    </div>
+
+</footer>
 
 <div id="count">
     <!-- SZM VERSION="2.0" -->
