@@ -1049,3 +1049,7 @@ ul.sponsorbox li {
     width: auto;
     margin-top: 10px;
 }
+
+object {
+    pointer-events: none;
+}
