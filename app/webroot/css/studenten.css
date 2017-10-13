@@ -624,13 +624,16 @@ form#lmSearchForm {
 
 #mainframe #content .half {
     padding: 0;
-    width: 300px !important;
+    width: 315px !important;
     float: left !important;
     clear: none;
 }
 
 .half h3 {
     font-weight: normal;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .half select {

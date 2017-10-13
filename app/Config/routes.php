@@ -46,6 +46,7 @@
 	Router::connect('/katalog2015', array('controller' => 'users', 'action' => 'index', null, 15));
 	Router::connect('/katalog2015classic', array('controller' => 'users', 'action' => 'index', null, 15, 'classic' => true));
 	Router::connect('/katalog2016', array('controller' => 'users', 'action' => 'index', null, 16));
+Router::connect('/katalog2017', array('controller' => 'users', 'action' => 'index', null, 17));
 
     Router::parseExtensions('rss');
 	/**

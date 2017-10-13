@@ -16,19 +16,21 @@ echo $this->Paginator->options(array('url' => array('year' => $year, 'occupation
         .wrapperBachelor,
         .wrapperMaster
         {
-            width: 260px;
+            width: 310px;
             float: left;
         }
 
         .wrapperBachelor
         {
-            padding-right: 40px;
+            padding-right: 30px;
+            padding-left: 10px;
         }
 
         .wrapperMaster
         {
             border-left: 1px solid rgb(210, 210, 210);
-            padding-left: 40px;
+            padding-left: 30px;
+            padding-right: 10px;
         }
 
         .item2016
