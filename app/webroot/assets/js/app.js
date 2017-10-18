@@ -17,13 +17,13 @@ jQuery(document).ready(function($) {
 
   // Search
 
-  $(".js-link-search").on('click', function() {
-    $(this).toggleClass("active");
-    $(".js-nav-main").toggleClass("inactive");
-    $(".js-search").toggleClass("active");
-    $('#search').focus();
-    return false;
-  });
+    $(".js-link-search").on('click', function() {
+        $(this).toggleClass("active");
+        $(".js-nav-main").toggleClass("inactive");
+        $(".js-search").toggleClass("active");
+        $('#search').focus();
+        return false;
+    });
 
 
   // Scrolling Mobile Headings

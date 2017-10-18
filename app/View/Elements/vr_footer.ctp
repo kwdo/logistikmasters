@@ -113,7 +113,7 @@
                 <a href="/hochschulranking">Hochschulranking</a>
             </li>
             <li class="id1554512">
-                <a href="/katalog2017">Recruiting-Katalog 2017</a>
+                <a href="/katalog2016">Recruiting-Katalog 2016</a>
             </li>
             <li class="id1035231 <?php if ($navi == 'LOESUNGEN'): ?> active<?php endif; ?>">
                 <a href="/loesungen-aller-wettbewerbe">Lösungen (aller Wettbewerbe)</a>

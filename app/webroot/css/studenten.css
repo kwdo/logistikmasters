@@ -118,7 +118,7 @@
 }
 
 .boxLink.blue.back {
-    background-image: url(../img/backgrounds/arrowBlueBoldMirror.gif) no-repeat;
+    background: url(../img/backgrounds/arrowBlueBoldMirror.gif) no-repeat;
     margin-right: 10px;
 }
 

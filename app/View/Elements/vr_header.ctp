@@ -38,6 +38,7 @@
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
     <link href="/assets/cssKw/print.css" rel="stylesheet" media="print">
     <script src="/assets/js/vendor/picturefill.min.js"></script><script type="text/javascript" src="https://script.ioam.de/iam.js"> </script>
+    <!-- Start GPT Sync Tag -->
     <script>
       var gptadslots = [];
       (function(){
@@ -58,7 +59,7 @@
           .addSize([768, 1024], [[728, 90], [750, 250]])
           .addSize([970, 768], [[728, 90], [750, 250], [970, 90], [800, 250], [850, 250], [900, 250], [950, 250], [970, 250]])
           .addSize([1170, 768], [[728, 90], [790, 90], [1170, 90], [750, 250], [800, 250], [850, 250], [900, 250], [950, 250], [970, 250], [1000, 250], [1170, 250]])
-          .addSize([1500, 768], [[1500, 90], [1500, 250]])
+          .addSize([1500, 768], [[728, 90], [790, 90], [1170, 90], [750, 250], [800, 250], [850, 250], [900, 250], [950, 250], [970, 250], [1000, 250], [1170, 250], [1500, 90], [1500, 250]])
           .build();
 
       var mapping3 = googletag.sizeMapping()
@@ -98,28 +99,7 @@
       googletag.pubads().collapseEmptyDivs();
       googletag.enableServices();
     </script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script><script>
-    window.addEventListener("load", function(){
-      window.cookieconsent.initialise({
-        "palette": {
-          "popup": {
-            "background": "#353535",
-            "text": "#ffffff"
-          },
-          "button": {
-            "background": "#e22713",
-            "text": "#ffffff"
-          }
-        },
-        "position": "bottom",
-        "content": {
-          "message": "Mit der Nutzung dieser Website erklären Sie sich mit unserer Verwendung von Cookies einverstanden.",
-          "dismiss": "Verstanden",
-          "link": "Mehr Informationen.",
-          "href": "www.verkehrsrundschau.de/datenschutz"
-        }
-      })});
-    </script><link rel="stylesheet" href="/css/vr.css">
+    <!-- End GPT Sync Tag --><link rel="stylesheet" href="/css/vr.css">
     <link rel="stylesheet" href="/css/studenten.css">
     <script src="/js/compiled/main-2017-08-21.js"></script><script src="/js/patches.js"></script>
     <script type="text/javascript">
