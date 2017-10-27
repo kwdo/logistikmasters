@@ -190,7 +190,7 @@
                             </li>
                         </ul>
                         <div class="vr-head__search js-search">
-                            <form action="/suche">
+                            <form action="https://www.verkehrsrundschau.de/suche">
                                 <label for="search" class="sr-only">Search</label>
                                 <input type="text" name="globalsearchterm" class="vr-head__search-field" id="search" placeholder="Suche">
                             </form>

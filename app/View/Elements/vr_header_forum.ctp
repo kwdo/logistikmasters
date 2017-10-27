@@ -107,7 +107,7 @@
             <a href="/vr/1025473?login" class="login">Login</a>
             <a href="https://registrierung.springerfachmedien-muenchen.de/app/index?theme=VHV" class="register">| Neu registrieren!</a>
         </div>         				<div id="search">
-            <form method="post" action="/suche">
+            <form method="post" action="https://www.verkehrsrundschau.de/suche">
                 <input type="text" name="search[query]" value="Volltextsuche" onfocus="if(this.value==defaultValue)this.value='';" id="_query" type="text" /><input type="image" id="searchbutton" src="/img/search.png" alt="Suchen" />
             </form>
             <ul id="mininavi">
