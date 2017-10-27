@@ -15,12 +15,12 @@ echo $this->element('http_fetcher', array('url' => 'http://www.verkehrsrundschau
                     $("span.pre").parent().css('float', 'left');
                 }
                 var links = document.querySelectorAll("#lmnews div.newsEntry a");
-                if(links)
+                if(links && links.length)
                 {
-                    links.forEach(function(a)
+                    for(var i=0; i<links.length; i++)
                     {
-                        a.setAttribute('href', 'https://www.verkehrsrundschau.de/nachrichten' + a.getAttribute('href'));
-                    });
+                        links[i].setAttribute('href', 'https://www.verkehrsrundschau.de/nachrichten' + links[i].getAttribute('href'));
+                    }
                 }
             });
         });
