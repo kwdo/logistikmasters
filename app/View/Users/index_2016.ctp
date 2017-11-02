@@ -233,7 +233,7 @@ foreach (array('Bachelor', 'Master') as $degree)
             $picture = $this->Html->image($image);
         }
 
-        if ($user['UserCatalog']['rank'] <= SPECIAL_RANKS && $i <= SPECIAL_RANKS)
+        if ($user['UserCatalog']['rank'] <= SPECIAL_RANKS)
         { // Kachel mit Pokal
             ?>
             <div class="item2016 top3">
