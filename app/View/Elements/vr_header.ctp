@@ -131,7 +131,7 @@
                     <div class="col-sm-4 col-md-3">
 
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="/">
+                            <a class="navbar-brand" href="https://www.verkehrsrundschau.de">
                                 <object data="/assets/img/icons/VR-Logo-Freigestellt.svg"  width="156" height="32" class="img-logo" type="image/svg+xml">
                                     <img src="/assets/img/logo-verkehrs-rundschau.png" width="156" height="32" class="img-logo" border="0" alt="Verkehrs Rundschau">
                                 </object>
